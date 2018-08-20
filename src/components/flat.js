@@ -7,9 +7,10 @@ class Flat extends React.Component{
             backgroundImage: `url('${this.props.flat.imageUrl}')`
         }
         return(
-            <div className = 'flat' > 
+            <div className = 'flat' >  
+               <div className = 'flat-title'> {title} </div>
                <div className = 'flat-picture' style = {style}></div>
-               <div className = 'flat-title'> {title} </div> 
+               
             </div>
         );
     }

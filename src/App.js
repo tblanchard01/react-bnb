@@ -14,10 +14,31 @@ class App extends Component {
       "lat": 48.885707,
       "lng": 2.343543
     }
+
+    const flats = [flat, flat, flat, flat]
+
     return (
-      <div>
-        <Flat flat={flat} />
+      <div className = "app">
+      <div className = "main">
+      <div className = "search">
       </div>
+        <div className = "flats">
+        
+        {flats.map(function(){
+           
+           return <Flat flat = {flat}></Flat>
+
+        })}
+        
+        {/* <Flat flat = {flat} ></Flat>
+        <Flat flat = {flat} ></Flat>
+        <Flat flat = {flat}></Flat> */}
+
+        </div>
+        </div>
+    <div className = "map">
+</div>
+</div> 
     );
   }
 }
