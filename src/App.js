@@ -25,7 +25,7 @@ class App extends Component {
         <div className = "flats">
         
         {flats.map((flat) => {
-          return <Flat flat = {flat}></Flat>
+          return <Flat flat = {flat}> </Flat>
            
 
         })}
